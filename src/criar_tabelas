@@ -1,0 +1,44 @@
+-- Tabelas de destino (data mart) para o TP1 de ISI - loja online
+-- Compatível com MySQL / MariaDB. Para PostgreSQL, trocar DATETIME por TIMESTAMP.
+
+CREATE DATABASE IF NOT EXISTS loja_dw CHARACTER SET utf8mb4;
+USE loja_dw;
+
+CREATE TABLE IF NOT EXISTS dim_cliente (
+    id_cliente      INT PRIMARY KEY,
+    nome            VARCHAR(100) NOT NULL,
+    nif_hash        CHAR(64),            -- NIF anonimizado (SHA-256)
+    email_anon      VARCHAR(150),        -- email anonimizado
+    telefone        VARCHAR(20),
+    cidade          VARCHAR(60)
+);
+
+CREATE TABLE IF NOT EXISTS dim_produto (
+    id_produto      INT PRIMARY KEY,
+    nome            VARCHAR(120) NOT NULL,
+    categoria       VARCHAR(60),
+    preco           DECIMAL(10,2) NOT NULL,
+    stock           INT
+);
+
+CREATE TABLE IF NOT EXISTS fact_vendas (
+    id_encomenda    INT PRIMARY KEY,
+    id_cliente      INT NOT NULL,
+    id_produto      INT NOT NULL,
+    quantidade      INT NOT NULL,
+    data_encomenda  DATE NOT NULL,
+    estado          VARCHAR(20),
+    valor_total     DECIMAL(12,2) NOT NULL,
+    valor_com_iva   DECIMAL(12,2) NOT NULL,
+    FOREIGN KEY (id_cliente) REFERENCES dim_cliente(id_cliente),
+    FOREIGN KEY (id_produto) REFERENCES dim_produto(id_produto)
+);
+
+-- Registo de linhas rejeitadas na validação (para logs/relatório de erros)
+CREATE TABLE IF NOT EXISTS log_rejeitados (
+    id_log          INT AUTO_INCREMENT PRIMARY KEY,
+    origem          VARCHAR(30),
+    id_registo      VARCHAR(30),
+    motivo          VARCHAR(200),
+    data_hora       DATETIME DEFAULT CURRENT_TIMESTAMP
+);

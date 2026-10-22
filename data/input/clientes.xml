@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cliente>
+  <cliente>
+    <id>1</id>
+    <nome>Carla Sousa</nome>
+    <nif>313164754</nif>
+    <email>carla.sousa@exemplo.pt</email>
+    <telefone>939593103</telefone>
+    <cidade>  braga </cidade>
+  </cliente>
+  <cliente>
+    <id>2</id>
+    <nome>LUÍS COSTA</nome>
+    <nif>564835030</nif>
+    <email>luis.costa@exemplo.pt</email>
+    <telefone>924192832</telefone>
+    <cidade>Braga</cidade>
+  </cliente>
+</cliente>

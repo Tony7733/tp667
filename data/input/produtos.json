@@ -1,0 +1,144 @@
+{
+  "produtos": [
+    {
+      "id": 1,
+      "nome": "Rato sem fios",
+      "categoria": "Informática",
+      "preco": 123.05,
+      "stock": 6
+    },
+    {
+      "id": 2,
+      "nome": "Teclado mecânico",
+      "categoria": "Informática",
+      "preco": 141.98,
+      "stock": 62
+    },
+    {
+      "id": 3,
+      "nome": "Monitor 24 polegadas",
+      "categoria": "Informática",
+      "preco": 45.88,
+      "stock": 26
+    },
+    {
+      "id": 4,
+      "nome": "Webcam HD",
+      "categoria": "Informática",
+      "preco": 129.96,
+      "stock": 139
+    },
+    {
+      "id": 5,
+      "nome": "Auscultadores USB",
+      "categoria": "Informática",
+      "preco": 20.62,
+      "stock": 108
+    },
+    {
+      "id": 6,
+      "nome": "Hub USB-C",
+      "categoria": "Informática",
+      "preco": 10.39,
+      "stock": 23
+    },
+    {
+      "id": 7,
+      "nome": "Candeeiro de secretária",
+      "categoria": "Casa",
+      "preco": 45.04,
+      "stock": 129
+    },
+    {
+      "id": 8,
+      "nome": "Cadeira ergonómica",
+      "categoria": "Casa",
+      "preco": 116.11,
+      "stock": 143
+    },
+    {
+      "id": 9,
+      "nome": "Organizador de cabos",
+      "categoria": "Casa",
+      "preco": 41.36,
+      "stock": 139
+    },
+    {
+      "id": 10,
+      "nome": "Suporte para portátil",
+      "categoria": "Casa",
+      "preco": 82.28,
+      "stock": 114
+    },
+    {
+      "id": 11,
+      "nome": "Tapete de rato XL",
+      "categoria": "Casa",
+      "preco": 113.75,
+      "stock": 1
+    },
+    {
+      "id": 12,
+      "nome": "Capa de proteção",
+      "categoria": "Telemóveis",
+      "preco": 145.18,
+      "stock": 40
+    },
+    {
+      "id": 13,
+      "nome": "Carregador rápido 30W",
+      "categoria": "Telemóveis",
+      "preco": 133.94,
+      "stock": 87
+    },
+    {
+      "id": 14,
+      "nome": "Cabo USB-C 2m",
+      "categoria": "Telemóveis",
+      "preco": 56.02,
+      "stock": 55
+    },
+    {
+      "id": 15,
+      "nome": "Película de vidro",
+      "categoria": "Telemóveis",
+      "preco": 181.97,
+      "stock": 86
+    },
+    {
+      "id": 16,
+      "nome": "Power bank 10000mAh",
+      "categoria": "Telemóveis",
+      "preco": 23.45,
+      "stock": 97
+    },
+    {
+      "id": 17,
+      "nome": "Caderno A5",
+      "categoria": "Escritório",
+      "preco": 22.43,
+      "stock": 88
+    },
+    {
+      "id": 18,
+      "nome": "Pack de canetas",
+      "categoria": "Escritório",
+      "preco": 116.43,
+      "stock": 11
+    },
+    {
+      "id": 19,
+      "nome": "Agrafador",
+      "categoria": "Escritório",
+      "preco": 139.79,
+      "stock": 137
+    },
+    {
+      "id": 20,
+      "nome": "Quadro branco",
+      "categoria": "Escritório",
+      "preco": 27.64,
+      "stock": 96
+    }
+  ]
+}

@@ -1,0 +1,3 @@
+id_encomenda;id_cliente;id_produto;quantidade;data_encomenda;estado;email_contacto
+1017;1;4;1;2026-08-05;entregue;carla.sousa@exemplo.pt
+1024;2;1;2;2026-03-21;entregue;luis.costa@exemplo.pt
